@@ -93,18 +93,16 @@ $shadow-color: #0CF25D;
                 font-weight: 100;
             }
         }
+}
 
-        button{
-            position: relative;
-            left: 50%;
-            margin-top: 1em;
-            transform: translate(-50%);
-            background-color: $text-color;
-            padding: 0em 2em;
-            border: none;
-            color: $logo-color;
-            border-radius: 15px;
-        }
+@mixin button {
+    position: relative;
+    margin: 0 auto;
+    background-color: $text-color;
+    padding: 0em 2em;
+    border: none;
+    color: $logo-color;
+    border-radius: 15px;
 }
 
 @mixin footer {
@@ -139,9 +137,88 @@ body{
     background-color: $bg-color;
 }
 
-.wrapper{
+.app{
     width: 100vw;
     height: 100vh;
+
+    .splashPage{
+
+        main{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+    
+          .logo{
+    
+            img{
+              display: block;
+              margin: 0 auto;
+            }
+          }
+    
+          .signin-signup{
+              margin: 0 auto;
+              width: 40%;
+              text-align: center;
+    
+            button{
+              @include button;
+              margin-bottom: 2em;
+            }
+          }
+        }
+      }
+
+    .signUp, .signIn{
+
+        header{
+            text-align: center;
+            padding-top: 3em;
+            box-sizing: border-box;        }
+
+        main{
+            text-align: center;
+            margin-top: 3em;
+
+            .signIn, .signUp{
+                position: relative;
+
+                h1{
+                    position: absolute;
+                    text-align: center;
+                    width: 100vw;
+                    color: $text-color;
+                    letter-spacing: .1em;
+                }
+            }
+
+            img{
+                width: 8em;
+            }
+
+            form{
+                width: 90vw;
+                margin: 3em auto;
+                height: 16em;
+
+                input{
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid rgba($color: $logo-color, $alpha: .5);
+                }
+
+                ::placeholder{
+                   color: rgba($color: $logo-color, $alpha: .5);
+                }
+            }
+
+            button{
+                @include button;
+                margin-top: 2em;
+            }
+        }
+    }
 
     .newShares{
 
@@ -217,6 +294,17 @@ body{
 
             form{
                 @include form;
+
+                button{
+                    @include button;
+                    margin-top: -1em;
+                    text-align: center;
+                    display: block;
+                }
+
+                // input[type='file']{
+                //     background-color: transparent;
+                // }
             }
         }
 
@@ -300,10 +388,16 @@ body{
                 }
 
                 .buttons{
-                    margin: 1.5em auto;
-                    width: 50vw;
-                    flex-wrap: wrap;
+                    width: 50%;
                     padding-bottom: 4em;
+                    margin: 1em auto;
+                    text-align: center;
+
+                    button{
+                        @include button;
+                        margin-top: 1em;
+                        width: 8em;
+                    }
                 }
             }
         }

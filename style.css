@@ -13,12 +13,114 @@ body {
   background-color: #0D0D0D;
 }
 
-.wrapper {
+.app {
   width: 100vw;
   height: 100vh;
 }
 
-.wrapper .newShares header {
+.app .splashPage main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.app .splashPage main .logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.app .splashPage main .signin-signup {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+}
+
+.app .splashPage main .signin-signup button {
+  position: relative;
+  margin: 0 auto;
+  background-color: #E5E5E5;
+  padding: 0em 2em;
+  border: none;
+  color: #0597F2;
+  border-radius: 15px;
+  margin-bottom: 2em;
+}
+
+.app .signUp header, .app .signIn header {
+  text-align: center;
+  padding-top: 3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app .signUp main, .app .signIn main {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.app .signUp main .signIn, .app .signUp main .signUp, .app .signIn main .signIn, .app .signIn main .signUp {
+  position: relative;
+}
+
+.app .signUp main .signIn h1, .app .signUp main .signUp h1, .app .signIn main .signIn h1, .app .signIn main .signUp h1 {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  color: #E5E5E5;
+  letter-spacing: .1em;
+}
+
+.app .signUp main img, .app .signIn main img {
+  width: 8em;
+}
+
+.app .signUp main form, .app .signIn main form {
+  width: 90vw;
+  margin: 3em auto;
+  height: 16em;
+}
+
+.app .signUp main form input, .app .signIn main form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(5, 151, 242, 0.5);
+}
+
+.app .signUp main form ::-webkit-input-placeholder, .app .signIn main form ::-webkit-input-placeholder {
+  color: rgba(5, 151, 242, 0.5);
+}
+
+.app .signUp main form :-ms-input-placeholder, .app .signIn main form :-ms-input-placeholder {
+  color: rgba(5, 151, 242, 0.5);
+}
+
+.app .signUp main form ::-ms-input-placeholder, .app .signIn main form ::-ms-input-placeholder {
+  color: rgba(5, 151, 242, 0.5);
+}
+
+.app .signUp main form ::placeholder, .app .signIn main form ::placeholder {
+  color: rgba(5, 151, 242, 0.5);
+}
+
+.app .signUp main button, .app .signIn main button {
+  position: relative;
+  margin: 0 auto;
+  background-color: #E5E5E5;
+  padding: 0em 2em;
+  border: none;
+  color: #0597F2;
+  border-radius: 15px;
+  margin-top: 2em;
+}
+
+.app .newShares header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +143,7 @@ body {
   padding-top: 3em;
 }
 
-.wrapper .newShares header .fa-chevron-left {
+.app .newShares header .fa-chevron-left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 2em;
           flex: 0 0 2em;
@@ -49,12 +151,12 @@ body {
   color: #0597F2;
 }
 
-.wrapper .newShares header .logo img {
+.app .newShares header .logo img {
   width: 4em;
   margin: 0 auto;
 }
 
-.wrapper .newShares header .profimg img {
+.app .newShares header .profimg img {
   width: 4em;
   height: 4em;
   border-radius: 50%;
@@ -62,29 +164,29 @@ body {
           box-shadow: 0px 0px 10px #0CF25D;
 }
 
-.wrapper .newShares header .welcome {
+.app .newShares header .welcome {
   width: 60%;
 }
 
-.wrapper .newShares header .welcome p {
+.app .newShares header .welcome p {
   color: #E5E5E5;
   font-size: 1.25em;
   font-weight: 100;
 }
 
-.wrapper .newShares header .profimg img {
+.app .newShares header .profimg img {
   width: 6em;
   height: 6em;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.wrapper .newShares main {
+.app .newShares main {
   position: relative;
   margin-top: 2em;
 }
 
-.wrapper .newShares main h2 {
+.app .newShares main h2 {
   position: absolute;
   top: .05em;
   color: #E5E5E5;
@@ -94,15 +196,15 @@ body {
   text-align: center;
 }
 
-.wrapper .newShares main .logo {
+.app .newShares main .logo {
   text-align: center;
 }
 
-.wrapper .newShares main .logo img {
+.app .newShares main .logo img {
   width: 40vw;
 }
 
-.wrapper .newShares footer {
+.app .newShares footer {
   min-height: 3em;
   border-radius: .5em .5em 0em 0em;
   background-color: #00283e;
@@ -123,12 +225,12 @@ body {
   width: 100vw;
 }
 
-.wrapper .newShares footer i {
+.app .newShares footer i {
   font-size: 2.5em;
   color: #0597F2;
 }
 
-.wrapper .addUpdateShare header {
+.app .addUpdateShare header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +252,7 @@ body {
   background: linear-gradient(180deg, #00283e 50%, rgba(13, 13, 13, 0) 100%);
 }
 
-.wrapper .addUpdateShare header .fa-chevron-left {
+.app .addUpdateShare header .fa-chevron-left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 2em;
           flex: 0 0 2em;
@@ -158,12 +260,12 @@ body {
   color: #0597F2;
 }
 
-.wrapper .addUpdateShare header .logo img {
+.app .addUpdateShare header .logo img {
   width: 4em;
   margin: 0 auto;
 }
 
-.wrapper .addUpdateShare header .profimg img {
+.app .addUpdateShare header .profimg img {
   width: 4em;
   height: 4em;
   border-radius: 50%;
@@ -171,22 +273,22 @@ body {
           box-shadow: 0px 0px 10px #0CF25D;
 }
 
-.wrapper .addUpdateShare header .welcome {
+.app .addUpdateShare header .welcome {
   width: 60%;
 }
 
-.wrapper .addUpdateShare header .welcome p {
+.app .addUpdateShare header .welcome p {
   color: #E5E5E5;
   font-size: 1.25em;
   font-weight: 100;
 }
 
-.wrapper .addUpdateShare main {
+.app .addUpdateShare main {
   position: relative;
   margin-top: 2em;
 }
 
-.wrapper .addUpdateShare main h2 {
+.app .addUpdateShare main h2 {
   position: absolute;
   top: .05em;
   color: #E5E5E5;
@@ -196,24 +298,24 @@ body {
   text-align: center;
 }
 
-.wrapper .addUpdateShare main .logo {
+.app .addUpdateShare main .logo {
   text-align: center;
 }
 
-.wrapper .addUpdateShare main .logo img {
+.app .addUpdateShare main .logo img {
   width: 40vw;
 }
 
-.wrapper .addUpdateShare main form {
+.app .addUpdateShare main form {
   margin: 4em auto;
   width: 80vw;
 }
 
-.wrapper .addUpdateShare main form .form-group {
+.app .addUpdateShare main form .form-group {
   margin: 2em 0;
 }
 
-.wrapper .addUpdateShare main form .form-group label {
+.app .addUpdateShare main form .form-group label {
   color: #E5E5E5;
   font-weight: 100;
   font-size: .75em;
@@ -221,12 +323,12 @@ body {
   letter-spacing: .15em;
 }
 
-.wrapper .addUpdateShare main form .form-group input {
+.app .addUpdateShare main form .form-group input {
   background-color: rgba(5, 151, 242, 0.25);
   border: none;
 }
 
-.wrapper .addUpdateShare main form .form-group textarea {
+.app .addUpdateShare main form .form-group textarea {
   width: 80vw;
   background-color: rgba(5, 151, 242, 0.25);
   font-size: .75em;
@@ -235,44 +337,44 @@ body {
   padding: 1em;
 }
 
-.wrapper .addUpdateShare main form .form-group ::-webkit-input-placeholder {
+.app .addUpdateShare main form .form-group ::-webkit-input-placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .addUpdateShare main form .form-group :-ms-input-placeholder {
+.app .addUpdateShare main form .form-group :-ms-input-placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .addUpdateShare main form .form-group ::-ms-input-placeholder {
+.app .addUpdateShare main form .form-group ::-ms-input-placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .addUpdateShare main form .form-group ::placeholder {
+.app .addUpdateShare main form .form-group ::placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .addUpdateShare main form button {
+.app .addUpdateShare main form button {
   position: relative;
-  left: 50%;
-  margin-top: 1em;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  margin: 0 auto;
   background-color: #E5E5E5;
   padding: 0em 2em;
   border: none;
   color: #0597F2;
   border-radius: 15px;
+  margin-top: -1em;
+  text-align: center;
+  display: block;
 }
 
-.wrapper .addUpdateShare footer {
+.app .addUpdateShare footer {
   min-height: 3em;
   border-radius: .5em .5em 0em 0em;
   background-color: #00283e;
@@ -293,12 +395,12 @@ body {
   width: 100vw;
 }
 
-.wrapper .addUpdateShare footer i {
+.app .addUpdateShare footer i {
   font-size: 2.5em;
   color: #0597F2;
 }
 
-.wrapper .usersPosts header {
+.app .usersPosts header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +422,7 @@ body {
   background: linear-gradient(180deg, #00283e 50%, rgba(13, 13, 13, 0) 100%);
 }
 
-.wrapper .usersPosts header .fa-chevron-left {
+.app .usersPosts header .fa-chevron-left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 2em;
           flex: 0 0 2em;
@@ -328,12 +430,12 @@ body {
   color: #0597F2;
 }
 
-.wrapper .usersPosts header .logo img {
+.app .usersPosts header .logo img {
   width: 4em;
   margin: 0 auto;
 }
 
-.wrapper .usersPosts header .profimg img {
+.app .usersPosts header .profimg img {
   width: 4em;
   height: 4em;
   border-radius: 50%;
@@ -341,43 +443,43 @@ body {
           box-shadow: 0px 0px 10px #0CF25D;
 }
 
-.wrapper .usersPosts header .welcome {
+.app .usersPosts header .welcome {
   width: 60%;
 }
 
-.wrapper .usersPosts header .welcome p {
+.app .usersPosts header .welcome p {
   color: #E5E5E5;
   font-size: 1.25em;
   font-weight: 100;
 }
 
-.wrapper .usersPosts main {
+.app .usersPosts main {
   width: 80vw;
   margin: 2em auto;
   color: #E5E5E5;
 }
 
-.wrapper .usersPosts main .profimg {
+.app .usersPosts main .profimg {
   text-align: center;
 }
 
-.wrapper .usersPosts main .profimg img {
+.app .usersPosts main .profimg img {
   width: 8em;
   height: 8em;
   border-radius: 50%;
 }
 
-.wrapper .usersPosts main h1 {
+.app .usersPosts main h1 {
   text-align: center;
 }
 
-.wrapper .usersPosts main p {
+.app .usersPosts main p {
   text-align: center;
   font-size: .85em;
   font-weight: 100;
 }
 
-.wrapper .usersPosts footer {
+.app .usersPosts footer {
   min-height: 3em;
   border-radius: .5em .5em 0em 0em;
   background-color: #00283e;
@@ -398,12 +500,12 @@ body {
   width: 100vw;
 }
 
-.wrapper .usersPosts footer i {
+.app .usersPosts footer i {
   font-size: 2.5em;
   color: #0597F2;
 }
 
-.wrapper .settings header {
+.app .settings header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +527,7 @@ body {
   background: linear-gradient(180deg, #00283e 50%, rgba(13, 13, 13, 0) 100%);
 }
 
-.wrapper .settings header .fa-chevron-left {
+.app .settings header .fa-chevron-left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 2em;
           flex: 0 0 2em;
@@ -433,12 +535,12 @@ body {
   color: #0597F2;
 }
 
-.wrapper .settings header .logo img {
+.app .settings header .logo img {
   width: 4em;
   margin: 0 auto;
 }
 
-.wrapper .settings header .profimg img {
+.app .settings header .profimg img {
   width: 4em;
   height: 4em;
   border-radius: 50%;
@@ -446,42 +548,42 @@ body {
           box-shadow: 0px 0px 10px #0CF25D;
 }
 
-.wrapper .settings header .welcome {
+.app .settings header .welcome {
   width: 60%;
 }
 
-.wrapper .settings header .welcome p {
+.app .settings header .welcome p {
   color: #E5E5E5;
   font-size: 1.25em;
   font-weight: 100;
 }
 
-.wrapper .settings main .profimg {
+.app .settings main .profimg {
   text-align: center;
 }
 
-.wrapper .settings main .profimg img {
+.app .settings main .profimg img {
   width: 8em;
   height: 8em;
   border-radius: 50%;
 }
 
-.wrapper .settings main h1 {
+.app .settings main h1 {
   text-align: center;
   color: #E5E5E5;
 }
 
-.wrapper .settings main form {
+.app .settings main form {
   margin: 4em auto;
   width: 80vw;
   margin: 1em auto;
 }
 
-.wrapper .settings main form .form-group {
+.app .settings main form .form-group {
   margin: 2em 0;
 }
 
-.wrapper .settings main form .form-group label {
+.app .settings main form .form-group label {
   color: #E5E5E5;
   font-weight: 100;
   font-size: .75em;
@@ -489,12 +591,12 @@ body {
   letter-spacing: .15em;
 }
 
-.wrapper .settings main form .form-group input {
+.app .settings main form .form-group input {
   background-color: rgba(5, 151, 242, 0.25);
   border: none;
 }
 
-.wrapper .settings main form .form-group textarea {
+.app .settings main form .form-group textarea {
   width: 80vw;
   background-color: rgba(5, 151, 242, 0.25);
   font-size: .75em;
@@ -503,64 +605,62 @@ body {
   padding: 1em;
 }
 
-.wrapper .settings main form .form-group ::-webkit-input-placeholder {
+.app .settings main form .form-group ::-webkit-input-placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .settings main form .form-group :-ms-input-placeholder {
+.app .settings main form .form-group :-ms-input-placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .settings main form .form-group ::-ms-input-placeholder {
+.app .settings main form .form-group ::-ms-input-placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .settings main form .form-group ::placeholder {
+.app .settings main form .form-group ::placeholder {
   font-size: .75em;
   color: rgba(229, 229, 229, 0.5);
   font-weight: 100;
 }
 
-.wrapper .settings main form button {
-  position: relative;
-  left: 50%;
-  margin-top: 1em;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #E5E5E5;
-  padding: 0em 2em;
-  border: none;
-  color: #0597F2;
-  border-radius: 15px;
-}
-
-.wrapper .settings main form .form-group {
+.app .settings main form .form-group {
   margin: 1em 0;
   position: relative;
 }
 
-.wrapper .settings main form i {
+.app .settings main form i {
   position: absolute;
   bottom: .7em;
   right: .25em;
   color: #0597F2;
 }
 
-.wrapper .settings main form .buttons {
-  margin: 1.5em auto;
-  width: 50vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.app .settings main form .buttons {
+  width: 50%;
   padding-bottom: 4em;
+  margin: 1em auto;
+  text-align: center;
 }
 
-.wrapper .settings footer {
+.app .settings main form .buttons button {
+  position: relative;
+  margin: 0 auto;
+  background-color: #E5E5E5;
+  padding: 0em 2em;
+  border: none;
+  color: #0597F2;
+  border-radius: 15px;
+  margin-top: 1em;
+  width: 8em;
+}
+
+.app .settings footer {
   min-height: 3em;
   border-radius: .5em .5em 0em 0em;
   background-color: #00283e;
@@ -581,7 +681,7 @@ body {
   width: 100vw;
 }
 
-.wrapper .settings footer i {
+.app .settings footer i {
   font-size: 2.5em;
   color: #0597F2;
 }
