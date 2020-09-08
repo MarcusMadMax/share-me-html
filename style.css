@@ -685,4 +685,8 @@ body {
   font-size: 2.5em;
   color: #0597F2;
 }
+
+.app .share-main header img {
+  width: 100vw;
+}
 /*# sourceMappingURL=style.css.map */
